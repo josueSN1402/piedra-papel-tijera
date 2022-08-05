@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Piedra, Papel o Tijeras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <noscript>Este sitio necesita JavaScript para funcionar, activelo y vuelva a cargar la página.</noscript>
+
+    <header id="header-container">
+        <h1 class="page-title">Piedra, papel o tijera</h1>
+    </header>
+    <main id="primary-contect" class="d-grd">
+        <section class="main__section main__section--player">
+            <div class="play-sect-title">
+                <h2 class="player-title">Jugador</h2>
+                <strong class="message">Escoje una opción</strong>
+            </div>
+            <hr />
+            <section class="play-options d-flx f-d-c">
+                <input type="radio" class="player-option" name="optionplayer" id="stone">
+                <label for="stone" class="d-flx j-c-c">
+                    <img src="./images/svg/stone.svg" class="option-icon" alt="Piedra">
+                </label>
+                <input type="radio" class="player-option" name="optionplayer" id="paper">
+                <label for="paper" class="d-flx j-c-c">
+                    <img src="./images/svg/paper.svg" class="option-icon" alt="Papel">
+                </label>
+                <input type="radio" class="player-option" name="optionplayer" id="scissor">
+                <label for="scissor" class="d-flx j-c-c">
+                    <img src="./images/svg/scissor.svg" class="option-icon" alt="Tijera">
+                </label>
+            </section>
+        </section>
+        <section class="main__section main__section--result d-flx all-c">
+            <!-- <p class="alert-result"><span class="result"></span> gano</p> -->
+            <button id="battle-buton">VERSUS</button>
+        </section>
+        <section class="main__section main__section--rival">
+            <div class="play-sect-title">
+                <h2 class="player-title">Oponente</h2>
+                <strong class="message">El oponente se selecionara automaticamente</strong>
+            </div>
+            <hr />
+            <section class="play-options d-flx f-d-c">
+                <input type="radio" class="pc-option" name="optionpc" id="stone-pc">
+                <label for="stone-pc" class="d-flx j-c-c">
+                    <img src="./images/svg/stone.svg" class="option-icon" alt="Piedra">
+                </label>
+                <input type="radio" class="pc-option" name="optionpc" id="paper-pc">
+                <label for="paper-pc" class="d-flx j-c-c">
+                    <img src="./images/svg/paper.svg" class="option-icon" alt="Papel">
+                </label>
+                <input type="radio" class="pc-option" name="optionpc" id="scissor-pc">
+                <label for="scissor-pc" class="d-flx j-c-c">
+                    <img src="./images/svg/scissor.svg" class="option-icon" alt="Tijera">
+                </label>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer-container"></footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
