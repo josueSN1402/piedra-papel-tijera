@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Piedra, Papel o Tijeras</title>
+    <title>Juego de Piedra, Papel o Tijera</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,14 +15,14 @@
 <body>
     <noscript>Este sitio necesita JavaScript para funcionar, activelo y vuelva a cargar la página.</noscript>
 
-    <header id="header-container">
+    <header id="header-container" class="d-flx all-c">
         <h1 class="page-title">Piedra, papel o tijera</h1>
     </header>
     <main id="primary-contect" class="d-grd">
         <section class="main__section main__section--player">
             <div class="play-sect-title">
                 <h2 class="player-title">Jugador</h2>
-                <strong class="message">Escoje una opción</strong>
+                <i class="message">Escoje una opción</i>
             </div>
             <hr />
             <section class="play-options d-flx f-d-c">
@@ -41,13 +41,12 @@
             </section>
         </section>
         <section class="main__section main__section--result d-flx all-c">
-            <!-- <p class="alert-result"><span class="result"></span> gano</p> -->
             <button id="battle-buton">VERSUS</button>
         </section>
         <section class="main__section main__section--rival">
             <div class="play-sect-title">
                 <h2 class="player-title">Oponente</h2>
-                <strong class="message">El oponente se selecionara automaticamente</strong>
+                <i class="message">Selecionara automaticamente</i>
             </div>
             <hr />
             <section class="play-options d-flx f-d-c">
